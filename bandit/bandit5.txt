@@ -1,0 +1,29 @@
+Level Goal
+==========
+The password for the next level is stored in the only human-readable file in the inhere directory. 
+Tip: if your terminal is messed up, try the “reset” command.
+=========
+
+Run this command:
+
+$ ssh bandit4@bandit.labs.overthewire.org -s 2220
+
+Enter password:
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+Now, go to inhere directory:
+
+bandit4@bandit:~$ cd inhere/
+
+A simple solution to find the only human-readable file would be as follows:
+
+bandit4@bandit:~/inhere$ find . | xargs file | grep text
+./-file07: ASCII text
+
+Now read the file:
+
+bandit4@bandit:~/inhere$ cat ./-file07 
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+
+

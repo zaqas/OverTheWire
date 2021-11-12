@@ -1,0 +1,22 @@
+Level Goal
+==========
+The password for the next level is stored in a hidden file in the inhere directory.
+==========
+
+Run this command:
+$ ssh bandit3@bandit.labs.overthewire.org
+
+Enter this password:
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
+To see hidden files in current directory, run this:
+
+bandit3@bandit:~/inhere$ ls -a
+.  ..  .hidden
+
+To read the hidden file:
+
+bandit3@bandit:~/inhere$ cat .hidden 
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+
